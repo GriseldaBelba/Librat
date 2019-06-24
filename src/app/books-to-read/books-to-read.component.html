@@ -1,0 +1,12 @@
+<div>
+  <h2>Libra per tu lexuar</h2>
+  <input placeholder="Kerko..." #vlera (keyup)="kerkoLiber(vlera.value)"/>
+
+  <ul>
+    <li *ngFor="let titull of librat">
+      {{titull}}
+    </li>
+  </ul>
+  
+  <button class="btn btn-danger" (click)="fshiLibrat()"> Fshi librat </button>
+</div>
